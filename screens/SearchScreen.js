@@ -7,7 +7,7 @@ import ResultsList from '../components/ResultsList'
 export default function SearchScreen() {
 
     const [searchApi , results] =useResults()
-    console.log(results);
+    
 
     const filterResultsByPrice =(price) =>{
         return results.filter((result)=>{
