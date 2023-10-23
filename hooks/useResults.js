@@ -11,7 +11,7 @@ export default ()=>{
             params :{
                 limit: 50 ,
                 term: searchTerm ,
-                location: 'Ankara',
+                location: 'İstanbul',
             }
         })
         setResults(response.data.businesses);
