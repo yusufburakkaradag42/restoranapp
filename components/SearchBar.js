@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View , TextInput} from 'react-native'
 import React from 'react'
 import { AntDesign } from '@expo/vector-icons';
-export default function SearchBar() {
+export default function SearchBar({term,onTremChange , onTremsubmit}) {
   return (
     <View style={styles.backgroundStyle}>
       <AntDesign style={styles.iconStyle} name="search1" size={30} color="black" />
@@ -9,7 +9,12 @@ export default function SearchBar() {
       placeholder='Ara'
       autoCapitalize='none'
       autoCorrect={false}
+      //arama
+      value={term}
+      onChangeText={onTremChange}
+      onEndEditing={onTremsubmit}
        />
+
     </View>
   )
 }
