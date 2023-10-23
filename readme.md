@@ -8,3 +8,6 @@ npm install @react-navigation/native-stack // ekrandan
 
 
 icons npm i @expo/vector-icons
+
+istek atma
+npm i axios
