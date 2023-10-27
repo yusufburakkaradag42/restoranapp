@@ -6,7 +6,7 @@ export default function ResultDetail({result}) {
     <View style={styles.container}>
     <Image
           style={styles.image} 
-          source={result.image_url ? {uri: result.image_url} : null} />
+          source= {result.image_url ? {uri: result.image_url} : null} />
         <Text style={styles.name}>{result.name}</Text>
         <Text>{result.rating} Yıldızlı Restoran , {result.review_count} Değerlendirme</Text>
     </View>
@@ -23,6 +23,8 @@ const styles = StyleSheet.create({
         height:130,
         borderRadius: 8 ,
         marginBottom: 8 ,
+      
+        
     },
     name:{
         fontWeight: "bold",
